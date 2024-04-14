@@ -1,0 +1,27 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <img class="customIcon" src={tImg} alt="lampIcon">
+            Rock Paper Scissor
+            <img class="customIcon" src={tImg} alt="lampIcon">
+        </h3>
+        <div class="slds-var-m-around_x-large">
+            <p>
+                <span class="slds-var-p-right_medium">Player Score: {playerScore}</span>
+                <span>Computer Score: {computerScore}</span>
+            </p>
+            <p class="slds-var-m-vertical_small">Winner: {winner}</p>
+            <p class="slds-var-m-vertical_small">Your Guess: {playerGuess}</p>
+            <p class="slds-var-m-vertical_small">Computer Guess: {computerGuess}</p>
+            <div class="slds-var-m-around_x-large">
+                <img class="customIcon" title="rock" onclick={handleClick} src={rockImg}>
+                <img class="customIcon" title="paper" onclick={handleClick} src={paperImg}>
+                <img class="customIcon" title="scissor" onclick={handleClick} src={scissorImg}>
+            </div>
+            <div class="slds-var-m-around_x-large slds-var-p-vertical_medium">
+            <lightning-button label="Refresh Score"  icon-name="utility:refresh" class="slds-var-m-around_large" variant="brand" onclick={refreshScore}>
+            </lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

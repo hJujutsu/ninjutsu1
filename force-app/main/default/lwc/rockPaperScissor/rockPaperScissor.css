@@ -1,0 +1,19 @@
+.customIcon {
+    cursor: pointer;
+    max-width:85%;
+    max-height:90%; 
+    height: 50px; 
+    width: 50px;
+    padding: 10px;
+}
+
+.customIcon:hover {
+    cursor: pointer;
+    max-width: 85%;
+    max-height: 90%; 
+    height: 100px; 
+    width: 100px;
+    padding: 10px;
+}
+
+
