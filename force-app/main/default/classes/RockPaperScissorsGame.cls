@@ -5,7 +5,7 @@ public with sharing class RockPaperScissorsGame {
     
     public static String play(Choice playerChoice) {
         Choice computerChoice = generateComputerChoice();
-        
+         
         if (playerChoice == computerChoice) {
             return 'It\'s a tie!';
         } else if ((playerChoice == Choice.ROCK && computerChoice == Choice.SCISSORS) ||
